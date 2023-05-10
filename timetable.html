@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/style.css">
+
+     <title>ed-restaurant</title>
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+     <header class="container py-4">
+          <nav class="navbar navbar-expand-lg navbar-light d-flex">
+               <a class="navbar-brand mx-2 mx-md-0" href="index.html">244</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item mx-2">
+                              <a class="nav-link" aria-current="page" href="index.html">Аудитория</a>
+                         </li>
+                         <li class="nav-item mx-2">
+                              <a class="nav-link" href="restaurant.html">Учебный ресторан</a>
+                         </li>
+                         <li class="nav-item mx-2">
+                              <a class="nav-link" href="process.html">Учебный процесс</a>
+                         </li>
+                         <li class="nav-item mx-2">
+                              <a class="nav-link active" href="timetable.html">Расписание</a>
+                         </li>
+                    </ul>
+               </div>
+          </nav>
+     </header>
+
+     <div class="home">
+          <div class="container">
+               <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 mx-auto">
+                         <h2>Учебный ресторан</h2>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="container">
+        <div class="nav__days col-12 mb-3">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday-tab-pane" type="button" role="tab" aria-controls="monday-tab-pane" aria-selected="true">ПН</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday-tab-pane" type="button" role="tab" aria-controls="tuesday-tab-pane" aria-selected="false">ВТ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday-tab-pane" type="button" role="tab" aria-controls="wednesday-tab-pane" aria-selected="false">СР</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="thursday-tab" data-bs-toggle="tab" data-bs-target="#thursday-tab-pane" type="button" role="tab" aria-controls="thursday-tab-pane" aria-selected="false">ЧТ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday-tab-pane" type="button" role="tab" aria-controls="friday-tab-pane" aria-selected="false">ПТ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday-tab-pane" type="button" role="tab" aria-controls="saturday-tab-pane" aria-selected="false">СБ</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="timetable col-12 mb-5 px-3 py-5">
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="monday-tab-pane" role="tabpanel" aria-labelledby="monday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:45-15:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:30-17:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация бара и техническое приготовление напитков</div>
+                                    <div class="teacher">Гренков Е.А.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">17:15-18:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация бара и техническое приготовление напитков</div>
+                                    <div class="teacher">Гренков Е.А.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:55-20:30</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">8 пара</div>
+                                    <div class="time">20:35-22:10</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tuesday-tab-pane" role="tabpanel" aria-labelledby="tuesday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Проектный практикум</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:45-15:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:30-17:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">17:15-18:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:55-20:30</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">8 пара</div>
+                                    <div class="time">20:35-22:10</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="wednesday-tab-pane" role="tabpanel" aria-labelledby="wednesday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:45-15:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:30-17:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">17:15-18:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:55-20:30</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">8 пара</div>
+                                    <div class="time">20:35-22:10</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="thursday-tab-pane" role="tabpanel" aria-labelledby="thursday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:45-15:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:30-17:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">17:15-18:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:55-20:30</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">8 пара</div>
+                                    <div class="time">20:35-22:10</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="friday-tab-pane" role="tabpanel" aria-labelledby="friday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:45-15:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Организация обслуживания и сервис</div>
+                                    <div class="teacher">Мирзоян А.П.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:30-17:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">17:15-18:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:55-20:30</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">8 пара</div>
+                                    <div class="time">20:35-22:10</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="saturday-tab-pane" role="tabpanel" aria-labelledby="saturday-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">1 пара</div>
+                                    <div class="time">8:00-9:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">2 пара</div>
+                                    <div class="time">9:45-11:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">3 пара</div>
+                                    <div class="time">11:30-13:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">4 пара</div>
+                                    <div class="time">13:15-14:50</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">5 пара</div>
+                                    <div class="time">15:00-16:35</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">6 пара</div>
+                                    <div class="time">16:45-18:20</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="timetable__block px-2">
+                                <div class="col-4">
+                                    <div class="number">7 пара</div>
+                                    <div class="time">18:30-20:05</div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="discipline">Дисциплина</div>
+                                    <div class="teacher">Преподаватель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <footer class="py-5 mt-auto">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4  text-center">
+                         <p class="mb-0"><a href="https://midis.ru" style="text-decoration: none; color: #777;">https://midis.ru</a></p>
+                    </div>
+                    <div class="col-md-4 col-sm-4  text-center"></div>
+                    <div class="col-md-4 col-sm-4  text-center">
+                         © 2023 midis | all rights reserved
+                    </div>
+               </div>
+          </div>
+     </footer>
+     
+</body>
+</html>
